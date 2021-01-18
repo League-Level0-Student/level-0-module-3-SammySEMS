@@ -24,7 +24,7 @@ public class CrazyCatLady {
 		
 		// 5. If they have 0 cats, show them a video of A Frog Sitting on a Bench Like a Human
 	
-	else if (cats=0) {
+	else if (cats == 0) {
 		JOptionPane.showMessageDialog(null, "Get one, your missing out!" );
 	}
 		
