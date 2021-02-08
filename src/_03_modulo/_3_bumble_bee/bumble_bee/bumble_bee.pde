@@ -4,23 +4,36 @@ void setup() {
      size(500, 500);
      background(160, 160, 160);
      drawFlower(350, 100);
+    
 }
 
 void draw() {
   
 // First run the program and you should see a flower.  
-  
+
   
 /* Then, use a loop to make a body for the Bee! 
+   
 (see the image on the recipe, it's a diagonal line of circles)
 Use modulo to make the colors alternate between yellow and black
 */
 
+for (int i = 0; i < 400; i+=21) {
+    if (i % 2 ==0){
+      fill(#1F1F17); 
+    }
+      else { 
+        fill(#F0EA33);
+    }
+      ellipse(i, i,50,50);
 
 
-/*
-Now put his head on using drawBeeFace(x,y)
-*/
+}
+
+
+//Now put his head on using drawBeeFace
+//drawBeeFace(50, 50);
+ drawBeeFace(420, 420);
 
 }
 
